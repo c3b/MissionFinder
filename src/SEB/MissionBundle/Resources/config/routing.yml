@@ -1,0 +1,20 @@
+# src/SEB/MissionBundle/Resources/config/routing.yml
+
+seb_mission_home:
+    path:      / 
+    defaults:  { _controller: SEBMissionBundle:Advert:index }
+    
+seb_mission_view:
+    path:      /advert/{id}
+    defaults:  { _controller: SEBMissionBundle:Advert:view }
+    
+seb_mission_add:
+    path:      /add
+    defaults:  { _controller: SEBMissionBundle:Advert:add }
+    
+seb_mission_view_slug:
+    path:      /{year}/{slug}.{_format}
+    defaults:  { _controller: SEBMissionBundle:Advert:viewSlug, format: html}
+    requirements:
+        year: \d{4}
+        format: html|xml

@@ -1,0 +1,4 @@
+seb_mission:
+    resource: "@SEBMissionBundle/Resources/config/routing.yml"
+    prefix:   /platform
+

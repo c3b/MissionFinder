@@ -1,0 +1,7 @@
+parameters:
+#    seb_mission.example.class: SEB\MissionBundle\Example
+
+services:
+#    seb_mission.example:
+#        class: %seb_mission.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
